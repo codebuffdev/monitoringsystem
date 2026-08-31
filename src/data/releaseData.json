@@ -1,0 +1,551 @@
+{
+  "version": "2.3.37",
+  "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.37/SystemMonitor-v2.3.37-Setup.exe",
+  "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.37",
+  "releaseDate": "August 2026",
+  "platforms": "Windows 10 / 11",
+  "architecture": "Windows x64",
+  "channel": "Stable",
+  "source": "github-releases-build-time",
+  "releaseHistory": [
+    {
+      "version": "2.3.37",
+      "date": "August 2026",
+      "summary": "📊 Performance History Responsiveness",
+      "changes": [
+        "Fixed the Performance History window when resized to smaller dimensions.",
+        "Performance charts now adapt to the available window space instead of using a fixed height.",
+        "Prevents the lower GPU, SWAP, Disk I/O, and Network charts from extending outside the visible window.",
+        "Full-screen behavior remains unchanged.",
+        "🔒 Stability",
+        "Based directly on the v2.3.36 Network Final build.",
+        "No changes to updater or installer behavior.",
+        "No changes to monitoring calculations or historical data.",
+        "No changes to chart drawing logic.",
+        "No changes to Network UI, icons, or Park gesture.",
+        "System Monitor v2.3.37 — Performance History Responsive Fix"
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.37",
+      "title": "System Monitor v2.3.37",
+      "installerName": "SystemMonitor-v2.3.37-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.37/SystemMonitor-v2.3.37-Setup.exe"
+    },
+    {
+      "version": "2.3.36",
+      "date": "August 2026",
+      "summary": "✨ Network UI Polish",
+      "changes": [
+        "Redesigned the Network information row for a cleaner, less cluttered appearance.",
+        "Moved download/upload speeds directly below the Network name.",
+        "Moved TOTAL transferred data directly below the RX/TX values.",
+        "Improved spacing and alignment while keeping the existing Network controls unchanged.",
+        "🔒 Stability",
+        "Based on the stable v2.3.35 updater baseline.",
+        "No changes to the updater or installer mechanism.",
+        "No changes to monitoring calculations.",
+        "No changes to Performance History.",
+        "No changes to Park gesture.",
+        "No changes to application icons."
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.36",
+      "title": "System Monitor v2.3.36",
+      "installerName": "SystemMonitor-v2.3.36-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.36/SystemMonitor-v2.3.36-Setup.exe"
+    },
+    {
+      "version": "2.3.35",
+      "date": "August 2026",
+      "summary": "🔄 Update Auto-Start Fix",
+      "changes": [
+        "Fixed the in-app update flow so the newly installed version automatically starts after installation completes.",
+        "The updater now waits for the installer to finish before launching the new SystemMonitor.exe.",
+        "Verifies that the new executable exists before starting it.",
+        "Reports an installation failure if the installer exits unsuccessfully.",
+        "🔒 Stability",
+        "Based directly on the working v2.3.34 build.",
+        "No changes to the installer configuration or installer flags.",
+        "No changes to monitoring functionality.",
+        "No changes to Network UI.",
+        "No changes to Performance History.",
+        "No changes to Park gesture.",
+        "No changes to the taskbar or system-tray icon implementation."
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.35",
+      "title": "System Monitor v2.3.35",
+      "installerName": "SystemMonitor-v2.3.35-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.35/SystemMonitor-v2.3.35-Setup.exe"
+    },
+    {
+      "version": "2.3.34",
+      "date": "August 2026",
+      "summary": "stable",
+      "changes": [
+        "🛠️ System Tray Icon Fix",
+        "Fixed the system-tray icon to use the same icon embedded in SystemMonitor.exe.",
+        "Keeps the tray icon consistent with the main Windows application/taskbar icon.",
+        "Added a safe fallback to the packaged icon if the embedded icon cannot be extracted.",
+        "🔒 Stability",
+        "Based directly on the working v2.3.33 build.",
+        "No changes to monitoring functionality.",
+        "No changes to Network UI.",
+        "No changes to Performance History.",
+        "No changes to Park gesture.",
+        "No changes to the updater or installer mechanism.",
+        "No per-window WPF icon references were added.",
+        "System Monitor v2.3.34 — Embedded Tray Icon Fix"
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.34",
+      "title": "System Monitor v2.3.34",
+      "installerName": "SystemMonitor-v2.3.34-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.34/SystemMonitor-v2.3.34-Setup.exe"
+    },
+    {
+      "version": "2.3.33",
+      "date": "August 2026",
+      "summary": "🛠️ System Tray Icon Fix",
+      "changes": [
+        "Improved the System Monitor system-tray icon rendering.",
+        "Updated the tray icon to use a transparent background.",
+        "Improved icon appearance at small Windows notification-area sizes.",
+        "🔒 Stability",
+        "Based on the working v2.3.30 release.",
+        "No changes to the main taskbar icon.",
+        "No changes to monitoring functionality.",
+        "No changes to Network UI.",
+        "No changes to Performance History.",
+        "No changes to Park gesture.",
+        "No changes to the updater or installer mechanism."
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.33",
+      "title": "System Monitor v2.3.33",
+      "installerName": "SystemMonitor-v2.3.33-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.33/SystemMonitor-v2.3.33-Setup.exe"
+    },
+    {
+      "version": "2.3.31",
+      "date": "August 2026",
+      "summary": "🛠️ Tray Icon Fix",
+      "changes": [
+        "Updated the System Monitor system-tray icon to use the correct application artwork.",
+        "Rebuilt the icon asset with proper Windows multi-size support.",
+        "Improved icon rendering at small tray sizes.",
+        "🔒 Stability",
+        "Based directly on the working v2.3.30 build.",
+        "No changes to the main taskbar icon.",
+        "No changes to monitoring functionality.",
+        "No changes to Network UI.",
+        "No changes to Performance History.",
+        "No changes to Park gesture.",
+        "No changes to the updater or installer mechanism."
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.31",
+      "title": "System Monitor v2.3.31",
+      "installerName": "SystemMonitor-v2.3.31-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.31/SystemMonitor-v2.3.31-Setup.exe"
+    },
+    {
+      "version": "2.3.30",
+      "date": "August 2026",
+      "summary": "🎨 Logo & Icon Update",
+      "changes": [
+        "Replaced the existing System Monitor logo with the new designer-provided waveform logo.",
+        "Updated the Windows application icon to use the new System Monitor artwork.",
+        "Improved the icon asset with multiple Windows icon sizes for better rendering across different contexts.",
+        "🔒 Stability",
+        "Based directly on the known-good v2.3.29 Park Gesture release.",
+        "No changes to monitoring functionality.",
+        "No changes to the Network UI.",
+        "No changes to Performance History.",
+        "No changes to the Park gesture.",
+        "No changes to the updater or installer mechanism."
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.30",
+      "title": "System Monitor v2.3.30",
+      "installerName": "SystemMonitor-v2.3.30-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.30/SystemMonitor-v2.3.30-Setup.exe"
+    },
+    {
+      "version": "2.3.29",
+      "date": "August 2026",
+      "summary": "gesture : park features",
+      "changes": [
+        "See the GitHub release notes for details."
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.29",
+      "title": "System Monitor v2.3.29",
+      "installerName": "SystemMonitor-v2.3.29-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.29/SystemMonitor-v2.3.29-Setup.exe"
+    },
+    {
+      "version": "2.3.28",
+      "date": "August 2026",
+      "summary": "v2.3.27",
+      "changes": [
+        "↓",
+        "100% download",
+        "↓",
+        "v2.3.27 closes",
+        "↓",
+        "installer runs",
+        "↓",
+        "old installation is replaced",
+        "↓",
+        "v2.3.28 launches"
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.28",
+      "title": "System Monitor v2.3.28",
+      "installerName": null,
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.28/SystemMonitor-v2.3.28-Setup.exe"
+    },
+    {
+      "version": "2.3.27",
+      "date": "August 2026",
+      "summary": "Test v2.3.27",
+      "changes": [
+        "See the GitHub release notes for details."
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.27",
+      "title": "System Monitor v2.3.27",
+      "installerName": null,
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.27/SystemMonitor-v2.3.27-Setup.exe"
+    },
+    {
+      "version": "2.3.26",
+      "date": "August 2026",
+      "summary": "v2.3.17",
+      "changes": [
+        "↓",
+        "Check for Updates",
+        "↓",
+        "Download v2.3.26 ZIP",
+        "↓",
+        "legacy updater.ps1 starts",
+        "↓",
+        "wait for v2.3.17 to exit",
+        "↓",
+        "run the bundled Inno Setup installer",
+        "↓",
+        "Inno Setup replaces the old installation",
+        "↓",
+        "new version starts"
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.26",
+      "title": "System Monitor v2.3.26",
+      "installerName": "SystemMonitor-v2.3.26-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.26/SystemMonitor-v2.3.26-Setup.exe"
+    },
+    {
+      "version": "2.3.23",
+      "date": "August 2026",
+      "summary": "Test installation",
+      "changes": [
+        "See the GitHub release notes for details."
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.23",
+      "title": "System Monitor v2.3.23",
+      "installerName": null,
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.23/SystemMonitor-v2.3.23-Setup.exe"
+    },
+    {
+      "version": "2.3.21",
+      "date": "August 2026",
+      "summary": "SystemMonitor",
+      "changes": [
+        "↓",
+        "Download + SHA-256 verification",
+        "↓",
+        "Create temporary updater",
+        "↓",
+        "Create temporary bootstrap script",
+        "↓",
+        "Register a one-time Windows scheduled task",
+        "↓",
+        "Start that task",
+        "↓",
+        "SystemMonitor exits",
+        "↓",
+        "Scheduled task remains alive independently",
+        "↓",
+        "Wait for SystemMonitor.exe to disappear",
+        "↓",
+        "Extract update",
+        "↓",
+        "Copy new files into existing installation",
+        "↓",
+        "Verify SystemMonitor.exe",
+        "↓",
+        "Start new version",
+        "↓",
+        "Delete scheduled task"
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.21",
+      "title": "System Monitor v2.3.21",
+      "installerName": "SystemMonitor-v2.3.21-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.21/SystemMonitor-v2.3.21-Setup.exe"
+    },
+    {
+      "version": "2.3.20",
+      "date": "August 2026",
+      "summary": "v2.3.17",
+      "changes": [
+        "↓",
+        "normal Check for Updates",
+        "↓",
+        "v2.3.20",
+        "↓",
+        "DOWNLOAD & INSTALL",
+        "↓",
+        "v2.3.17 closes",
+        "↓",
+        "v2.3.20 starts"
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.20",
+      "title": "System Monitor v2.3.20",
+      "installerName": "SystemMonitor-v2.3.20-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.20/SystemMonitor-v2.3.20-Setup.exe"
+    },
+    {
+      "version": "2.3.18",
+      "date": "August 2026",
+      "summary": "v2.3.17",
+      "changes": [
+        "↓",
+        "Check for Updates",
+        "↓",
+        "v2.3.18",
+        "↓",
+        "DOWNLOAD & INSTALL",
+        "↓",
+        "100%",
+        "↓",
+        "v2.3.17 closes",
+        "↓",
+        "updater replaces files",
+        "↓",
+        "v2.3.18 starts"
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.18",
+      "title": "System Monitor v2.3.18",
+      "installerName": "SystemMonitor-v2.3.18-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.18/SystemMonitor-v2.3.18-Setup.exe"
+    },
+    {
+      "version": "2.3.17",
+      "date": "August 2026",
+      "summary": "New installation should replace old one",
+      "changes": [
+        "See the GitHub release notes for details."
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.17",
+      "title": "System Monitor v2.3.17",
+      "installerName": null,
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.17/SystemMonitor-v2.3.17-Setup.exe"
+    },
+    {
+      "version": "2.3.16",
+      "date": "August 2026",
+      "summary": "Testing installation",
+      "changes": [
+        "See the GitHub release notes for details."
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.16",
+      "title": "System Monitor v2.3.16",
+      "installerName": "SystemMonitor-v2.3.16-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.16/SystemMonitor-v2.3.16-Setup.exe"
+    },
+    {
+      "version": "2.3.15",
+      "date": "August 2026",
+      "summary": "Testing new install replacing old",
+      "changes": [
+        "See the GitHub release notes for details."
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.15",
+      "title": "System Monitor v2.3.15",
+      "installerName": "SystemMonitor-v2.3.15-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.15/SystemMonitor-v2.3.15-Setup.exe"
+    },
+    {
+      "version": "2.3.14",
+      "date": "August 2026",
+      "summary": "**### Testing install & replace the older version**",
+      "changes": [
+        "See the GitHub release notes for details."
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.14",
+      "title": "System Monitor v2.3.14",
+      "installerName": "SystemMonitor-v2.3.14-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.14/SystemMonitor-v2.3.14-Setup.exe"
+    },
+    {
+      "version": "2.3.12",
+      "date": "August 2026",
+      "summary": "v2.3.11",
+      "changes": [
+        "↓",
+        "Check for Updates",
+        "↓",
+        "GitHub → v2.3.12",
+        "↓",
+        "Download",
+        "↓",
+        "Download reaches 100%",
+        "↓",
+        "Verify update",
+        "↓",
+        "Install",
+        "↓",
+        "Application restarts",
+        "↓",
+        "v2.3.12"
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.12",
+      "title": "SystemMonitor-v2.3.12",
+      "installerName": "SystemMonitor-v2.3.12-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.12/SystemMonitor-v2.3.12-Setup.exe"
+    },
+    {
+      "version": "2.3.6",
+      "date": "August 2026",
+      "summary": "Just a beta  test",
+      "changes": [
+        "See the GitHub release notes for details."
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.6",
+      "title": "System Monitor v2.3.6",
+      "installerName": "SystemMonitor-v2.3.10-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.6/SystemMonitor-v2.3.10-Setup.exe"
+    },
+    {
+      "version": "2.3.5",
+      "date": "August 2026",
+      "summary": "System Monitor v2.3.5",
+      "changes": [
+        "Updater download progress display",
+        "Real-time download percentage",
+        "Update download and verification",
+        "Existing application replacement and restart flow"
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.5",
+      "title": "System Monitor v2.3.5",
+      "installerName": "SystemMonitor-v2.3.5-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.5/SystemMonitor-v2.3.5-Setup.exe"
+    },
+    {
+      "version": "2.3.4",
+      "date": "August 2026",
+      "summary": "System Monitor v2.3.4",
+      "changes": [
+        "Added visible download progress during update downloads",
+        "Shows the current download percentage from 0% to 100%",
+        "Keeps the existing update verification and installation flow",
+        "No new system-monitoring features were added",
+        "SystemMonitor-v2.3.4-Setup.exe — Windows installer for new installations",
+        "SystemMonitor-v2.3.4-win-x64.zip — Windows x64 update package used by the in-app updater"
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.4",
+      "title": "System Monitor v2.3.4",
+      "installerName": "SystemMonitor-v2.3.4-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.4/SystemMonitor-v2.3.4-Setup.exe"
+    },
+    {
+      "version": "2.3.3",
+      "date": "August 2026",
+      "summary": "System Monitor v2.3.3",
+      "changes": [
+        "Version update from v2.3.2 → v2.3.3",
+        "Validation of GitHub release detection",
+        "Validation of update availability detection",
+        "Validation of Download & Install",
+        "Validation of application replacement",
+        "Validation of application restart",
+        "Validation that the application reports v2.3.3 after updating"
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.3",
+      "title": "System Monitor v2.3.3",
+      "installerName": "SystemMonitor-v2.3.3-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.3/SystemMonitor-v2.3.3-Setup.exe"
+    },
+    {
+      "version": "2.3.2",
+      "date": "August 2026",
+      "summary": "System Monitor v2.3.2",
+      "changes": [
+        "Improved GitHub release checking",
+        "Improved handling of GitHub API rate-limit responses",
+        "Clearer update-check error messages",
+        "Improved updater reliability when GitHub cannot be reached",
+        "Better handling of unavailable release information",
+        "Improved version comparison and update detection",
+        "SystemMonitor-v2.3.2-Setup.exe — recommended for normal installation",
+        "SystemMonitor-v2.3.2-win-x64.zip — application package used by the built-in updater"
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.2",
+      "title": "System Monitor v2.3.2",
+      "installerName": "SystemMonitor-v2.3.2-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.2/SystemMonitor-v2.3.2-Setup.exe"
+    },
+    {
+      "version": "2.3.1",
+      "date": "August 2026",
+      "summary": "System Monitor v2.3.1",
+      "changes": [
+        "First release intended to be delivered through the built-in updater",
+        "GitHub release detection",
+        "Update availability detection",
+        "Secure update download",
+        "Update integrity verification",
+        "Application replacement and restart"
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.1",
+      "title": "System Monitor v2.3.1",
+      "installerName": "SystemMonitor-v2.3.1-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.1/SystemMonitor-v2.3.1-Setup.exe"
+    },
+    {
+      "version": "2.3.0",
+      "date": "August 2026",
+      "summary": "System Monitor v2.3.0",
+      "changes": [
+        "CPU usage",
+        "RAM usage",
+        "GPU usage",
+        "Swap usage",
+        "Disk usage",
+        "Network activity",
+        "System uptime",
+        "Running processes",
+        "Top CPU-consuming process",
+        "Disk I/O",
+        "Network signal and data usage",
+        "1 minute",
+        "5 minutes",
+        "15 minutes",
+        "1 hour",
+        "6 hours",
+        "24 hours",
+        "CPU",
+        "RAM",
+        "GPU",
+        "Check GitHub for new releases",
+        "Detect newer versions",
+        "Show available updates",
+        "Download update packages",
+        "Verify update integrity",
+        "Install future updates through the application",
+        "**Setup.exe** — recommended for normal installation",
+        "**win-x64.zip** — application package used by the update system",
+        "Application updates",
+        "Monitoring capabilities",
+        "Performance history",
+        "Alerts",
+        "User experience",
+        "Documentation"
+      ],
+      "releaseUrl": "https://github.com/codebuffdev/system-monitor/releases/tag/v2.3.0",
+      "title": "System Monitor v2.3.0",
+      "installerName": "SystemMonitor-v2.3.0-Setup.exe",
+      "downloadUrl": "https://github.com/codebuffdev/system-monitor/releases/download/v2.3.0/SystemMonitor-v2.3.0-Setup.exe"
+    }
+  ]
+}
