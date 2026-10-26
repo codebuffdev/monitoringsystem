@@ -1,5 +1,5 @@
 import React from "react";
-import { Activity, Menu, X } from "lucide-react";
+import { Activity, Download, Menu, X } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 import { siteConfig } from "../data/siteConfig";
 import { useRelease } from "../context/ReleaseContext";
@@ -72,15 +72,17 @@ export function Layout({ children }) {
 					<NavLink to="/changelog" onClick={() => setMenuOpen(false)}>
 						Changelog
 					</NavLink>
-					<a
-						href={release.downloadUrl}
-						download
-						onClick={() => setMenuOpen(false)}
-						aria-label={`Download System Monitor v${release.version} installer`}
-					>
-						Download
-					</a>
 				</nav>
+
+				<a
+					className="nav-download"
+					href={release.downloadUrl}
+					download
+					aria-label={`Download System Monitor v${release.version} installer`}
+				>
+					<Download size={16} aria-hidden="true" />
+					Download
+				</a>
 
 				<button
 					className="menu-button"
