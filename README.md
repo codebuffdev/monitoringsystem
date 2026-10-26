@@ -47,3 +47,21 @@ npm run build
 ```
 
 The build no longer needs to query GitHub Releases. Release information is a runtime concern; `src/data/releaseData.json` remains as the frontend fallback snapshot.
+
+## Automatic deployment verification
+
+This repository is connected to Cloudflare Pages. The `main` branch is the production branch, and automatic deployments are enabled.
+
+To verify the deployment pipeline after a README-only change:
+
+1. Push a commit to `main`.
+2. Open the Cloudflare Pages project and go to **Deployments**.
+3. Confirm a new production deployment appears for the README commit.
+4. Wait for the deployment status to become **Success**.
+5. Open the production site and confirm it loads.
+
+A README-only commit is a safe deployment test: it changes documentation without changing the website's runtime behavior.
+
+## Download buttons
+
+The homepage's primary download button and the header's **Download** button link directly to the installer URL provided by the current release data.
