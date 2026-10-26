@@ -150,10 +150,15 @@ export default function Home() {
 						historical performance tracking and configurable alerts.
 					</p>
 					<div className="hero-actions">
-						<Link className="button primary" to="/download">
+						<a
+							className="button primary"
+							href={release.downloadUrl}
+							download
+							aria-label={`Download System Monitor v${release.version} installer`}
+						>
 							<Download size={18} aria-hidden="true" />
 							Download System Monitor
-						</Link>
+						</a>
 						<a className="button secondary" href="#features">
 							Explore features
 						</a>
@@ -368,23 +373,6 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="download-section" id="download">
-				<div className="download-card">
-					<span className="eyebrow">LATEST RELEASE</span>
-					<h2>Ready to monitor?</h2>
-					<p>
-						Download System Monitor for Windows and start monitoring
-						your PC.
-					</p>
-					<Link className="button primary" to="/download">
-						<Download size={18} aria-hidden="true" />
-						Download v{release.version}
-					</Link>
-					<div className="download-meta">
-						{release.platforms} <span>•</span> Latest stable release
-					</div>
-				</div>
-			</section>
 		</main>
 	);
 }
