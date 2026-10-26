@@ -2,6 +2,7 @@ import React from "react";
 import { Activity, Download, Menu, X } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 import { siteConfig } from "../data/siteConfig";
+import { useRelease } from "../context/ReleaseContext";
 
 export function Brand() {
 	return (
@@ -17,6 +18,7 @@ export function Brand() {
 }
 
 export function Layout({ children }) {
+	const release = useRelease();
 	const [menuOpen, setMenuOpen] = React.useState(false);
 
 	React.useEffect(() => {
@@ -70,15 +72,17 @@ export function Layout({ children }) {
 					<NavLink to="/changelog" onClick={() => setMenuOpen(false)}>
 						Changelog
 					</NavLink>
-					<NavLink to="/download" onClick={() => setMenuOpen(false)}>
-						Download
-					</NavLink>
 				</nav>
 
-				<Link className="nav-download" to="/download">
+				<a
+					className="nav-download"
+					href={release.downloadUrl}
+					download
+					aria-label={`Download System Monitor v${release.version} installer`}
+				>
 					<Download size={16} aria-hidden="true" />
 					Download
-				</Link>
+				</a>
 
 				<button
 					className="menu-button"
